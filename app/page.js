@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from 'next/link'; 
 import {
   Upload,
   FileText,
@@ -8,7 +9,7 @@ import {
   FileBarChart,
   FileSearch,
 } from "lucide-react";
-import Link from "next/link";
+
 
 export default function DataQualityHomepage() {
   const [dragActive, setDragActive] = useState(false);
@@ -150,7 +151,7 @@ export default function DataQualityHomepage() {
 
             {recentAnalyses.map((analysis, idx) => (
               <div key={idx} className="flex items-start gap-3 mb-3 last:mb-0">
-                <FileBarChart className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                <FileBarChart className="w-5 h-5 text-blue-500 mt-0.5" />
                 <div className="text-sm">
                   <p className="text-slate-700">
                     <span className="font-semibold">{analysis.name}</span> - Score:{" "}

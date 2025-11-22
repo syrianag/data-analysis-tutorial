@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { FileText, AlertCircle, Home } from 'lucide-react';
-import Link from 'next/link';
+import Link from 'next/link';  
 
 export default function PreviewPage() {
   const [progress, setProgress] = useState(0);
@@ -37,7 +37,7 @@ export default function PreviewPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6">
+    <div className="min-h-screen  from-slate-900 via-slate-800 to-slate-900 p-6">
       <div className="max-w-5xl mx-auto">
         <div className="bg-white rounded-3xl shadow-2xl p-8 border-4 border-amber-400">
           
@@ -66,7 +66,7 @@ export default function PreviewPage() {
               <span className="text-slate-600 font-medium">Analyzing...</span>
               <div className="flex-1 bg-slate-200 rounded-full h-8 overflow-hidden">
                 <div 
-                  className="bg-gradient-to-r from-slate-700 to-slate-900 h-full transition-all duration-300 flex items-center justify-end pr-3"
+                  className=" from-slate-700 to-slate-900 h-full transition-all duration-300 flex items-center justify-end pr-3"
                   style={{ width: `${progress}%` }}
                 >
                   <span className="text-white text-sm font-bold">{progress}%</span>
