@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { FileText, AlertCircle, Home } from 'lucide-react';
 import Link from 'next/link';  // ← ADD THIS
 
-export default function PageTwo() {  // ← Changed name to avoid confusion
+export default function Screen2() {  // ← Changed name to avoid confusion
   const [progress, setProgress] = useState(0);
   const [analyzing, setAnalyzing] = useState(true);
 
